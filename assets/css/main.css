@@ -8810,6 +8810,7 @@ h6 {
 @media (max-width: 1199px) {
   .hero-wrapper.style1 {
     background: var(--theme);
+    margin-top: 0px;
   }
 }
 .hero-wrapper.style1 .shape1_2 {
@@ -8880,7 +8881,7 @@ h6 {
 }
 @media (max-width: 991px) {
   .hero-main-container.style1 {
-    padding: 50px 0 0px;
+    padding: 0px 0 0px;
     margin-top: 0;
   }
 }
@@ -8929,6 +8930,7 @@ h6 {
 @media (max-width: 1199px) {
   .hero-content.style1 .subtitle {
     padding: 10px;
+    font-size: 14px;
   }
 }
 .hero-content.style1 h1 {
@@ -9084,6 +9086,7 @@ h6 {
 }
 .hero-thumb.style1 .main-thumb img {
   position: relative;
+  display: none;
   z-index: 9;
 }
 @media (max-width: 1199px) {
