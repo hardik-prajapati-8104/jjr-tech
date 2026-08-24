@@ -8857,7 +8857,7 @@ h6 {
 
 .hero-main-container.style1 {
   position: relative;
-  padding: 134px 0 73px;
+  padding: 134px 0 0px;
   background: var(--theme);
   margin-top: -120px;
   width: 100%;
