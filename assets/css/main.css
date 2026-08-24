@@ -9085,11 +9085,13 @@ h6 {
   z-index: 9;
 }
 .hero-thumb.style1 .main-thumb img {
-  position: relative;
-  display: none;
+  position: relative; 
   z-index: 9;
 }
 @media (max-width: 1199px) {
+  .hero-thumb.style1 .main-thumb img{
+    display: none;
+  }
   .hero-thumb.style1 .main-thumb {
     margin-bottom: 50px;
     margin-top: 0;
