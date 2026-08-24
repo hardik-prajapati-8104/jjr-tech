@@ -1,0 +1,54 @@
+   /* =========================================================
+   JJR TECH - MOBILE HEADER FOUC FIX
+   ========================================================= */
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    .header-middle {
+        display: block;
+    }
+
+    .header__hamburger {
+        display: none !important;
+    }
+
+}
+
+
+/* Tablet + Mobile */
+@media (max-width: 1199px) {
+
+    /* Never allow desktop navigation to flash on mobile */
+    .header-middle {
+        display: none !important;
+    }
+
+    /* Hide desktop Get A Quote button */
+    .header-button {
+        display: none !important;
+    }
+
+    /* Always show mobile hamburger immediately */
+    .header__hamburger {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Keep hamburger icon stable */
+    .header__hamburger .sidebar__toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .header__hamburger .sidebar__toggle i {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+}
