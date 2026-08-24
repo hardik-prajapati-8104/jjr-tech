@@ -8810,7 +8810,7 @@ h6 {
 @media (max-width: 1199px) {
   .hero-wrapper.style1 {
     background: var(--theme);
-    margin-top: 0px;
+    margin-top: -70px;
   }
 }
 .hero-wrapper.style1 .shape1_2 {
