@@ -11821,6 +11821,7 @@ input.main-search-input::placeholder {
 }
 .project-item-card.style1:hover, .project-item-card.style1.active {
   background: var(--theme);
+  cursor:pointer;
 }
 .project-item-card.style1:hover h5, .project-item-card.style1.active h5 {
   color: var(--white-color);
@@ -11874,7 +11875,7 @@ input.main-search-input::placeholder {
   background: var(--white-color);
   text-align: center;
   width: 100%;
-  height: 370px;
+  height: 100%;
   -webkit-clip-path: url(#projectContentdMask);
           clip-path: url(#projectContentdMask);
   /* Using the SVG mask */
@@ -12794,7 +12795,7 @@ input.main-search-input::placeholder {
 .service-card.style1 .body h3 a {
   color: var(--title-color);
   font-family: var(--title-font);
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;

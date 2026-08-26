@@ -14,6 +14,7 @@
    <title>JJR Tech - IT Solution & Technology HTML Template</title>
    <!--<< Favcion >>-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
    <link rel="shortcut icon" href="assets/img/favicon.svg">
    <!--<< Bootstrap min.css >>-->
    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -33,6 +34,23 @@
    <link rel="stylesheet" href="assets/css/main.css">
 
    <link rel="stylesheet" href="assets/css/responsive.css">
+   <style>
+      .fancy-box.style2 .icon {
+         width: 56px;
+         height: 56px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         background: #fff;
+         border-radius: 10px;
+      }
+
+      .fancy-box.style2 .icon i {
+         font-size: 30px;
+         color: #17629a;
+         line-height: 1;
+      }
+   </style>
 </head>
 
 <body>
@@ -213,8 +231,6 @@
       </div>
    </div>
 
-
-
    <!-- Hero Section    S T A R T -->
    <section class="hero-section fix">
       <div class="hero-wrapper style1" height="100px;">
@@ -349,8 +365,8 @@
                <div class="section-title">
                   <div class="subtitle"> <img src="assets/img/icon/arrowLeft.svg" alt="icon"> <span> Our Services
                      </span><img src="assets/img/icon/arrowRight.svg" alt="icon"></div>
-                  <h2 class="title">Technology Solutions That Empower Your Business</h2>
-                  <p>From infrastructure and networks to web, cloud, databases and digital platforms, JJR TECH provides reliable technology solutions designed to improve performance, security and business growth.</p>
+                  <h2 class="title">Driving Innovation Through Advanced Technology Solutions</h2>
+                  <p>From robust infrastructure and secure networks to modern web applications, cloud systems, and smart platforms, JJR TECH delivers tailored IT solutions designed to accelerate growth, enhance security, and optimize performance.</p>
                </div>
                <div class="arrow-btn text-end wow fadeInUp" data-wow-delay=".9s">
                   <button data-slider-prev="#serviceSliderOne" class="slider-arrow style1"><i
@@ -367,15 +383,24 @@
                      data-slider-options='{"loop": true, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":2,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":3},"1200":{"slidesPerView":4}}}'>
                      <div class="swiper-wrapper">
 
+                        <style>
+                           .service-card .body p {
+                              display: -webkit-box;
+                              -webkit-box-orient: vertical;
+                              -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+                              overflow: hidden;
+                              text-overflow: ellipsis;
+                           }
+                        </style>
+
                         <div class="swiper-slide">
                            <div class="service-card style1">
                               <div class="icon">
                                  <img src="assets/img/icon/serviceIcon1_1.svg" alt="icon">
                               </div>
                               <div class="body">
-                                 <h3> <a href="service-details.html">Data Guard Sentinel</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <h3> <a href="service-details.html">IT Infrastructure</a> </h3>
+                                 <p>Build scalable and secure networks to empower enterprise operations, driving seamless connectivity and optimal performance.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
@@ -388,9 +413,8 @@
                                  <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
                               </div>
                               <div class="body">
-                                 <h3> <a href="service-details.html">Woo Commerce</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <h3> <a href="service-details.html">IT Network Services</a> </h3>
+                                 <p>Deliver robust enterprise networking solutions, ensuring maximum uptime, high-speed data transmission, and ironclad system security.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
@@ -403,9 +427,8 @@
                                  <img src="assets/img/icon/serviceIcon1_3.svg" alt="icon">
                               </div>
                               <div class="body">
-                                 <h3> <a href="service-details.html">CRM Solutions</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <h3> <a href="service-details.html">Internet Content Provider</a> </h3>
+                                 <p>Seamlessly distribute engaging digital content across global networks, expanding audience reach and maximizing online visibility.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
@@ -419,8 +442,7 @@
                               </div>
                               <div class="body">
                                  <h3> <a href="service-details.html">Web Design</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <p>Craft stunning, responsive, and user-centric websites that captivate visitors and elevate your brand identity online.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
@@ -433,9 +455,8 @@
                                  <img src="assets/img/icon/serviceIcon1_1.svg" alt="icon">
                               </div>
                               <div class="body">
-                                 <h3> <a href="service-details.html">Data Guard Sentinel</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <h3> <a href="service-details.html">Electronic Chips Programming</a> </h3>
+                                 <p>Develop advanced firmware and microcode to optimize hardware functionality, precision control, and embedded device performance.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
@@ -448,9 +469,8 @@
                                  <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
                               </div>
                               <div class="body">
-                                 <h3> <a href="service-details.html">Woo Commerce</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <h3> <a href="service-details.html">Social Media Apps</a> </h3>
+                                 <p>Build dynamic social applications and manage digital platforms to foster active community engagement and brand growth.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
@@ -463,9 +483,8 @@
                                  <img src="assets/img/icon/serviceIcon1_1.svg" alt="icon">
                               </div>
                               <div class="body">
-                                 <h3> <a href="service-details.html">Data Guard Sentinel</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <h3> <a href="service-details.html">Database System Design</a> </h3>
+                                 <p>Architect secure, high-performance database systems to organize complex enterprise data, streamline queries, and ensure availability.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
@@ -478,14 +497,28 @@
                                  <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
                               </div>
                               <div class="body">
-                                 <h3> <a href="service-details.html">Woo Commerce</a> </h3>
-                                 <p>Collaboratively formulate principle capital. Progressively evolve user
-                                    revolutionary hosting services.</p>
+                                 <h3> <a href="service-details.html">Cloud & Datacenters</a> </h3>
+                                 <p>Provide reliable cloud environments and modern datacenter infrastructure to ensure scalable computing and resilient data storage.</p>
                                  <a href="service-details.html" class="link-btn style1">Read more <i
                                        class="fa-regular fa-chevrons-right"></i></a>
                               </div>
                            </div>
                         </div>
+
+                        <div class="swiper-slide">
+                           <div class="service-card style1">
+                              <div class="icon">
+                                 <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
+                              </div>
+                              <div class="body">
+                                 <h3> <a href="service-details.html">Communication Software</a> </h3>
+                                 <p>Engineer specialized software for computer systems and communication hardware to enable seamless data exchange and device control.</p>
+                                 <a href="service-details.html" class="link-btn style1">Read more <i
+                                       class="fa-regular fa-chevrons-right"></i></a>
+                              </div>
+                           </div>
+                        </div>
+
                      </div>
 
                   </div>
@@ -538,48 +571,66 @@
                               src="assets/img/icon/arrowLeftWhite.svg" alt="icon"> <span class="text-white"> about
                               company
                            </span><img src="assets/img/icon/arrowRightWhite.svg" alt="icon"></div>
-                        <h2 class="title text-white wow fadeInUp" data-wow-delay=".6s">Navigating Tech Horizons Together
-                        </h2>
-                        <p class="mt-25 text-white wow fadeInUp" data-wow-delay=".5s">There are many variations of
-                           passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
-                           injected humour, or randomised words which don't look even slightly believable. If you</p>
+                        <h2 class="title text-white wow fadeInUp" data-wow-delay=".6s">Empowering Digital Transformation Through Expert Engineering</h2>
+                        <p class="mt-25 text-white wow fadeInUp" data-wow-delay=".5s">We are a dedicated team of technology innovators delivering robust software, scalable cloud architectures, and user-centric digital experiences. Our commitment is to turn complex challenges into seamless, high-performance business solutions.</p>
                      </div>
                      <div class="fancy-box-wrapper style2">
-                        <div class="fancy-box style2 wow fadeInUp" data-wow-delay=".3s">
+
+                       <div class="fancy-box style2 wow fadeInUp" data-wow-delay=".3s">
                            <div class="item">
-                              <div class="icon"><img src="assets/img/icon/aboutIcon1_1.svg" alt="icon"></div>
+                              <div class="icon">
+                                    <i class="bi bi-code-slash"></i>
+                              </div>
                            </div>
+
                            <div class="item">
-                              <h6>Back-End Development</h6>
+                              <h6>Full-Stack Development</h6>
                            </div>
                         </div>
+
                         <div class="fancy-box style2 wow fadeInUp" data-wow-delay=".5s">
                            <div class="item">
-                              <div class="icon"><img src="assets/img/icon/aboutIcon1_1.svg" alt="icon"></div>
+                              <div class="icon">
+                                    <i class="bi bi-cloud-check"></i>
+                              </div>
                            </div>
+
                            <div class="item">
-                              <h6>Product Design</h6>
+                              <h6>Cloud & Infrastructure</h6>
                            </div>
                         </div>
+
+                        <div class="fancy-box style2 wow fadeInUp" data-wow-delay=".5s">
+                           <div class="item">
+                              <div class="icon">
+                                    <i class="bi-window"></i>
+                              </div>
+                           </div>
+
+                           <div class="item">
+                              <h6>Web Development</h6>
+                           </div>
+                        </div>
+
                      </div>
                      <div class="counter-box-wrapper style1">
                         <div class="counter-box style1 wow fadeInUp" data-wow-delay=".3s">
                            <h3>
-                              <span class="counter-number">20.5</span> k
+                              <span class="counter-number">250</span> +
                            </h3>
                            <h6>Projects Done</h6>
                         </div>
                         <div class="counter-box style1 wow fadeInUp" data-wow-delay=".5s">
                            <h3>
-                              <span class="counter-number">100.5</span> k
+                              <span class="counter-number">120</span> +
                            </h3>
                            <h6>Happy Clients</h6>
                         </div>
                         <div class="counter-box style1 wow fadeInUp" data-wow-delay=".8s">
                            <h3>
-                              <span class="counter-number">150.5</span> k
+                              <span class="counter-number">15</span> +
                            </h3>
-                           <h6>Team Members</h6>
+                           <h6>Team Experts</h6>
                         </div>
                      </div>
                   </div>
@@ -591,7 +642,7 @@
       </div>
    </section>
 
-   <!-- Project Section    S T A R T -->
+   <!-- Project Section   S T A R T -->
    <section class="project-section space fix">
       <div class="project-container-wrapper style1">
          <div class="container">
@@ -602,43 +653,47 @@
                </div>
                <h2 class="title text-center">Check Our Latest Portfolios</h2>
             </div>
+
+            <!-- Navigation Cards -->
             <div class="project-item-wrapper style1">
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".2s">
+               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".2s" data-category="web-dev">
                   <div class="project-icon">
                      <img src="assets/img/icon/projectItemIcon1_1.svg" alt="icon">
                   </div>
-                  <h5>Data Analysis</h5>
+                  <h5>Web Development</h5>
                </div>
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".4s">
+               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".4s" data-category="app-dev">
                   <div class="project-icon">
                      <img src="assets/img/icon/projectItemIcon1_2.svg" alt="icon">
                   </div>
-                  <h5>UI/UX Designing</h5>
+                  <h5>App Development</h5>
                </div>
-               <div class="project-item-card style1 active wow fadeInUp" data-wow-delay=".6s">
+               <div class="project-item-card style1 active wow fadeInUp" data-wow-delay=".6s" data-category="ui-ux">
                   <div class="project-icon">
                      <img src="assets/img/icon/projectItemIcon1_3.svg" alt="icon">
                   </div>
-                  <h5>App Development</h5>
+                  <h5>UI/UX Designing</h5>
                </div>
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".8s">
+               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".8s" data-category="cloud-db">
                   <div class="project-icon">
                      <img src="assets/img/icon/projectItemIcon1_4.svg" alt="icon">
                   </div>
-                  <h5>Wp Development</h5>
+                  <h5>Cloud & Database</h5>
                </div>
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay="1s">
+               <div class="project-item-card style1 wow fadeInUp" data-wow-delay="1s" data-category="it-infra">
                   <div class="project-icon">
                      <img src="assets/img/icon/projectItemIcon1_5.svg" alt="icon">
                   </div>
-                  <h5>3D Design Solution</h5>
+                  <h5>IT Infrastructure</h5>
                </div>
             </div>
+
+            <!-- Dynamic Content Area -->
             <div class="project-wrapper style1">
                <div class="row gy-5 gx-60">
                   <div class="col-xl-5">
                      <div class="project-thumb img-custom-anim-left wow fadeInUp" data-wow-delay=".5s">
-                        <img src="assets/img/project/projectThumb1_1.png" alt="thumb">
+                        <img id="project-main-thumb" src="assets/img/project/projectThumb1_1.png" alt="thumb">
                      </div>
                   </div>
                   <div class="col-xl-7">
@@ -647,10 +702,9 @@
                            <div class="row">
                               <div class="col-xl-9">
                                  <div class="project-content-left">
-                                    <h3>Detailing of our Project</h3>
-                                    <p class="text">There are many variations passages of Lorem Ipsum available but the
-                                       majority
-                                       have suffered alteration in some form by injected humour,</p>
+                                    <h3 id="project-title">Detailing of our Project</h3>
+                                    <p id="project-desc" class="text">There are many variations passages of Lorem Ipsum available but the majority have suffered alteration in some form by injected humour,</p>
+                                    
                                     <div class="fancy-box-wrapper style3">
                                        <div class="fancy-box style3">
                                           <div class="item">
@@ -659,7 +713,7 @@
                                              </div>
                                           </div>
                                           <div class="item">
-                                             <h6>Responsive website</h6>
+                                             <h6 id="feature-1">Responsive website</h6>
                                           </div>
                                        </div>
                                        <div class="fancy-box style3">
@@ -669,7 +723,7 @@
                                              </div>
                                           </div>
                                           <div class="item">
-                                             <h6>100% Customers Satisfaction</h6>
+                                             <h6 id="feature-2">100% Customers Satisfaction</h6>
                                           </div>
                                        </div>
                                     </div>
@@ -681,37 +735,108 @@
                                           </div>
                                        </div>
                                        <div class="item">
-                                          <h6>Big Data & Analytics</h6>
+                                          <h6 id="feature-3">Big Data & Analytics</h6>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-xl-3">
                                  <div class="project-content-right">
-                                    <img class="img-custom-anim-right wow fadeInUp" data-wow-delay=".6s"
+                                    <img id="project-sub-thumb" class="img-custom-anim-right wow fadeInUp" data-wow-delay=".6s"
                                        src="assets/img/project/projectThumb1_2.png" alt="thumb">
                                  </div>
                               </div>
                            </div>
-
-                           <!-- SVG Mask -->
-                           <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position: absolute;">
-                              <clipPath id="projectContentdMask">
-                                 <path
-                                    d="M0 16C0 7.16344 7.16344 0 16 0H746C754.837 0 762 7.16344 762 16V354C762 362.837 754.837 370 746 370H454.326C432.82 370 412.992 358.378 402.484 339.614L401.681 338.18C379.099 297.856 320.881 298.393 299.048 339.127C288.859 358.136 269.04 370 247.472 370H16C7.16344 370 0 362.837 0 354V16Z" />
-                              </clipPath>
-                           </svg>
-                        </div>
-
-                        <div class="shape"><a href="project-details.html"><img class="rotate360"
-                                 src="assets/img/shape/projectShape1_1.png" alt="shape"></a></div>
+ 
                      </div>
                   </div>
                </div>
             </div>
+            
          </div>
       </div>
    </section>
+
+   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    // Define content data for each service category
+    const projectData = {
+        "web-dev": {
+            title: "Custom Web Development Portfolio",
+            desc: "We build high-performance, fully responsive corporate websites and web applications tailored to optimize business operations and maximize user engagement.",
+            f1: "Responsive Design",
+            f2: "SEO Optimized",
+            f3: "Cross-Browser Compatibility",
+            thumb1: "assets/img/project/projectThumb1_1.png",
+            thumb2: "assets/img/project/projectThumb1_2.png"
+        },
+        "app-dev": {
+            title: "Mobile App Development Solutions",
+            desc: "Engineered robust, feature-rich iOS and Android mobile applications designed to offer seamless user experiences and scalable digital workflows.",
+            f1: "Cross-Platform Support",
+            f2: "High Security Standards",
+            f3: "Real-Time Sync",
+            thumb1: "assets/img/project/projectThumb1_1.png", // Change image paths if you have separate assets
+            thumb2: "assets/img/project/projectThumb1_2.png"
+        },
+        "ui-ux": {
+            title: "UI/UX Design & Prototyping",
+            desc: "Crafting intuitive, user-centric interfaces and interactive wireframes that captivate target audiences and elevate brand identity online.",
+            f1: "User Research & Wireframing",
+            f2: "Interactive Prototyping",
+            f3: "Modern Design Systems",
+            thumb1: "assets/img/project/projectThumb1_1.png",
+            thumb2: "assets/img/project/projectThumb1_2.png"
+        },
+        "cloud-db": {
+            title: "Cloud Architecture & Database Design",
+            desc: "Architect secure, high-performance cloud environments and structured database systems to ensure maximum availability and seamless data management.",
+            f1: "Secure Data Pipelines",
+            f2: "Cloud Scalability",
+            f3: "Automated Backups",
+            thumb1: "assets/img/project/projectThumb1_1.png",
+            thumb2: "assets/img/project/projectThumb1_2.png"
+        },
+        "it-infra": {
+            title: "Robust IT Infrastructure Services",
+            desc: "Building resilient enterprise IT networks and computing infrastructure designed to empower daily operations and guarantee uptime.",
+            f1: "Network Security",
+            f2: "24/7 Monitoring",
+            f3: "Enterprise Hardware Setup",
+            thumb1: "assets/img/project/projectThumb1_1.png",
+            thumb2: "assets/img/project/projectThumb1_2.png"
+        }
+    };
+
+    const cards = document.querySelectorAll(".project-item-card");
+
+    cards.forEach(card => {
+        card.addEventListener("click", function () {
+            // Remove active class from all cards
+            cards.forEach(c => c.classList.remove("active"));
+            // Add active class to clicked card
+            this.classList.add("active");
+
+            // Get category key
+            const category = this.getAttribute("data-category");
+            const data = projectData[category];
+
+            if (data) {
+                // Update text elements
+                document.getElementById("project-title").innerText = data.title;
+                document.getElementById("project-desc").innerText = data.desc;
+                document.getElementById("feature-1").innerText = data.f1;
+                document.getElementById("feature-2").innerText = data.f2;
+                document.getElementById("feature-3").innerText = data.f3;
+
+                // Update images
+                document.getElementById("project-main-thumb").setAttribute("src", data.thumb1);
+                document.getElementById("project-sub-thumb").setAttribute("src", data.thumb2);
+            }
+        });
+    });
+});
+   </script>
 
    <!-- Video Section    S T A R T -->
    <div class="video-box-area wow fadeInUp" data-wow-delay="0.6s">
