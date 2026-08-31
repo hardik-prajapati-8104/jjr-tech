@@ -1,39 +1,11 @@
 
-<!DOCTYPE html>
-<html lang="zxx">
-<!--<< Header Area >>-->
+<?php
+   include_once ('elements/header.php');
+   require_once 'data/services.php';
+   require_once 'data/projects.php';
+   include_once 'data/blogs.php';
+?>
 
-<head>
-   <!-- ========== Meta Tags ========== -->
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="author" content="ex-coders">
-   <meta name="description" content="Extech - IT Solution & Technology HTML Template">
-   <!-- ======== Page title ============ -->
-   <title>JJR Tech - IT Solution & Technology HTML Template</title>
-   <!--<< Favcion >>-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-   <link rel="shortcut icon" href="assets/img/favicon.svg">
-   <!--<< Bootstrap min.css >>-->
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-   <!--<< All Min Css >>-->
-   <link rel="stylesheet" href="assets/css/all.min.css">
-   <!--<< Animate.css >>-->
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <!--<< Magnific Popup.css >>-->
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <!--<< MeanMenu.css >>-->
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <!--<< Swiper Bundle.css >>-->
-   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-   <!--<< Nice Select.css >>-->
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <!--<< Main.css >>-->
-   <link rel="stylesheet" href="assets/css/main.css">
-
-   <link rel="stylesheet" href="assets/css/responsive.css">
    <style>
       .fancy-box.style2 .icon {
          width: 56px;
@@ -50,186 +22,15 @@
          color: #17629a;
          line-height: 1;
       }
-   </style>
-</head>
 
-<body>
-
-   <!-- Offcanvas Area Start -->
-   <div class="fix-area">
-      <div class="offcanvas__info">
-         <div class="offcanvas__wrapper">
-            <div class="offcanvas__content">
-               <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                  <div class="offcanvas__logo">
-                     <a href="index.html">
-                        <img src="assets/img/logo.png" alt="logo-img">
-                     </a>
-                  </div>
-                  <div class="offcanvas__close">
-                     <button>
-                        <i class="fas fa-times"></i>
-                     </button>
-                  </div>
-               </div>
-               <p class="text d-none d-lg-block">
-                  Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a feugiat leo
-                  urna eget eros. Duis Aenean a imperdiet risus.
-               </p>
-               <div class="mobile-menu fix mb-3"></div>
-               <div class="offcanvas__contact">
-                  <h4>Contact Info</h4>
-                  <ul>
-                     <li class="d-flex align-items-center">
-                        <div class="offcanvas__contact-icon">
-                           <i class="fal fa-map-marker-alt"></i>
-                        </div>
-                        <div class="offcanvas__contact-text">
-                           <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
-                        </div>
-                     </li>
-                     <li class="d-flex align-items-center">
-                        <div class="offcanvas__contact-icon mr-15">
-                           <i class="fal fa-envelope"></i>
-                        </div>
-                        <div class="offcanvas__contact-text">
-                           <a href="mailto:info@azent.com"><span
-                                 class="mailto:info@example.com">info@example.com</span></a>
-                        </div>
-                     </li>
-                     <li class="d-flex align-items-center">
-                        <div class="offcanvas__contact-icon mr-15">
-                           <i class="fal fa-clock"></i>
-                        </div>
-                        <div class="offcanvas__contact-text">
-                           <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
-                        </div>
-                     </li>
-                     <li class="d-flex align-items-center">
-                        <div class="offcanvas__contact-icon mr-15">
-                           <i class="far fa-phone"></i>
-                        </div>
-                        <div class="offcanvas__contact-text">
-                           <a href="tel:+11002345909">+11002345909</a>
-                        </div>
-                     </li>
-                  </ul>
-                  <div class="header-button mt-4">
-                     <a href="contact.html" class="theme-btn text-center">
-                        <span>get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
-                     </a>
-                  </div>
-                  <div class="social-icon d-flex align-items-center">
-                     <a href="#"><i class="fab fa-facebook-f"></i></a>
-                     <a href="#"><i class="fab fa-twitter"></i></a>
-                     <a href="#"><i class="fab fa-youtube"></i></a>
-                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="offcanvas__overlay"></div>
-
-   <!-- Header Section Start -->
-   <header>
-      <div id="header-sticky" class="header-1">
-         <div class="container">
-            <div class="mega-menu-wrapper">
-               <div class="header-main style-2">
-                  <div class="header-left">
-                     <div class="logo">
-                        <a href="index.html" class="header-logo">
-                           <img src="assets/img/logo.png" alt="logo-img" width="200px;" height="auto">
-                        </a>
-                     </div>
-                  </div>
-                  <div class="header-middle">
-                     <div class="mean__menu-wrapper">
-                        <div class="main-menu">
-                           <nav id="mobile-menu">
-                              <ul>
-                                 <li class="active menu-thumb">
-                                    <a href="index.html">
-                                       Home
-                                    </a>
-                                 </li>
-
-                                 <li>
-                                    <a href="about.html">About</a>
-                                 </li>
-                                 <li>
-                                    <a href="service.html">
-                                       Services
-                                    </a>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="news.html">
-                                       Pages
-                                       <i class="fas fa-angle-down"></i>
-                                    </a>
-                                    <ul class="submenu">
-                                       <li>
-                                          <a href="project.html">
-                                             Projects
-                                          </a>
-                                       </li>
-                                       <li>
-                                          <a href="team.html">
-                                             Team
-                                          </a>
-                                       </li>
-                                       <li><a href="faq.html">Faq's</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="news.html">
-                                       Blogs
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a href="contact.html">Contact</a>
-                                 </li>
-                              </ul>
-                           </nav>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="header-right d-flex justify-content-end align-items-center">
-                     <div class="header-button ms-4">
-                        <a href="contact.html" class="gt-btn">
-                           <span>
-                              get A Quote
-                              <i class="fa-solid fa-arrow-right-long"></i>
-                           </span>
-                        </a>
-                     </div>
-                     <div class="header__hamburger d-block d-xl-none my-auto">
-                        <div class="sidebar__toggle">
-                           <i class="fas fa-bars"></i>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </header> 
-
-   <!-- Search Area Start -->
-   <div class="search-wrap">
-      <div class="search-inner">
-         <i class="fas fa-times search-close" id="search-close"></i>
-         <div class="search-cell">
-            <form method="get">
-               <div class="search-field-holder">
-                  <input type="search" class="main-search-input" placeholder="Search...">
-               </div>
-            </form>
-         </div>
-      </div>
-   </div>
+      .service-card .body p {
+         display: -webkit-box;
+         -webkit-box-orient: vertical;
+         -webkit-line-clamp: 3; /* Limits the text to 3 lines */
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+   </style> 
 
    <!-- Hero Section    S T A R T -->
    <section class="hero-section fix">
@@ -359,176 +160,147 @@
 
    <!-- Service Section    S T A R T -->
    <section class="service-section space fix">
+
       <div class="service-container-wrapper style1">
+
          <div class="container">
-            <div class="title-wrap mb-45">
-               <div class="section-title">
-                  <div class="subtitle"> <img src="assets/img/icon/arrowLeft.svg" alt="icon"> <span> Our Services
-                     </span><img src="assets/img/icon/arrowRight.svg" alt="icon"></div>
-                  <h2 class="title">Driving Innovation Through Advanced Technology Solutions</h2>
-                  <p>From robust infrastructure and secure networks to modern web applications, cloud systems, and smart platforms, JJR TECH delivers tailored IT solutions designed to accelerate growth, enhance security, and optimize performance.</p>
+
+               <div class="title-wrap mb-45">
+
+                  <div class="section-title">
+
+                     <div class="subtitle">
+                           <img src="assets/img/icon/arrowLeft.svg" alt="icon">
+                           <span>Our Services</span>
+                           <img src="assets/img/icon/arrowRight.svg" alt="icon">
+                     </div>
+
+                     <h2 class="title">
+                           Driving Innovation Through Advanced Technology Solutions
+                     </h2>
+
+                     <p>
+                           From robust infrastructure and secure networks to modern web
+                           applications, cloud systems, and smart platforms, JJR TECH
+                           delivers tailored IT solutions designed to accelerate growth,
+                           enhance security, and optimize performance.
+                     </p>
+
+                  </div>
+
+                  <!-- Slider Arrows -->
+                  <div class="arrow-btn text-end wow fadeInUp" data-wow-delay=".9s">
+
+                     <button data-slider-prev="#serviceSliderOne" class="slider-arrow style1" type="button" aria-label="Previous Services">
+                           <i class="fa-sharp fa-regular fa-arrow-left-long"></i>
+                     </button>
+
+                     <button data-slider-next="#serviceSliderOne" class="slider-arrow style1 slider-next" type="button" aria-label="Next Services">
+                           <i class="fa-regular fa-arrow-right-long"></i>
+                     </button>
+
+                  </div>
+
                </div>
-               <div class="arrow-btn text-end wow fadeInUp" data-wow-delay=".9s">
-                  <button data-slider-prev="#serviceSliderOne" class="slider-arrow style1"><i
-                        class="fa-sharp fa-regular fa-arrow-left-long"></i></button>
-                  <button data-slider-next="#serviceSliderOne" class="slider-arrow style1 slider-next"><i
-                        class="fa-regular fa-arrow-right-long"></i></button>
-               </div>
-            </div>
 
-            <div class="row">
-               <div class="slider-area serviceSliderOne">
 
-                  <div class="swiper gt-slider" id="serviceSliderOne"
-                     data-slider-options='{"loop": true, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":2,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":3},"1200":{"slidesPerView":4}}}'>
-                     <div class="swiper-wrapper">
+               <div class="row">
 
-                        <style>
-                           .service-card .body p {
-                              display: -webkit-box;
-                              -webkit-box-orient: vertical;
-                              -webkit-line-clamp: 3; /* Limits the text to 3 lines */
-                              overflow: hidden;
-                              text-overflow: ellipsis;
-                           }
-                        </style>
+                  <div class="slider-area serviceSliderOne">
 
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_1.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">IT Infrastructure</a> </h3>
-                                 <p>Build scalable and secure networks to empower enterprise operations, driving seamless connectivity and optimal performance.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
+                     <div class="swiper gt-slider"
+                           id="serviceSliderOne"
+                           data-slider-options='{
+                              "loop": true,
+                              "breakpoints": {
+                                 "0": {
+                                       "slidesPerView": 1
+                                 },
+                                 "576": {
+                                       "slidesPerView": 2,
+                                       "centeredSlides": true
+                                 },
+                                 "768": {
+                                       "slidesPerView": 2
+                                 },
+                                 "992": {
+                                       "slidesPerView": 3
+                                 },
+                                 "1200": {
+                                       "slidesPerView": 4
+                                 }
+                              }
+                           }'
+                     >
+
+                           <div class="swiper-wrapper">
+                              <?php
+
+                              $serviceIndex = 0;
+                              foreach ($services as $slug => $service):
+                                 // Cycle animation delay
+                                 $delays = ['.3s', '.5s', '.7s', '.9s'];
+
+                                 $delay = $delays[$serviceIndex % count($delays)];
+
+                                 $serviceIndex++;
+                              ?>
+
+                                 <!-- Service Item -->
+                                 <div class="swiper-slide">
+
+                                       <div class="service-card style1 wow fadeInUp" data-wow-delay="<?= htmlspecialchars($delay) ?>">
+
+                                          <!-- Service Icon -->
+                                          <div class="icon">
+
+                                             <img src="assets/img/icon/<?= htmlspecialchars($service['icon']) ?>" alt="<?= htmlspecialchars($service['title']) ?>">
+
+                                          </div>
+
+                                          <!-- Service Body -->
+                                          <div class="body">
+
+                                             <h3>
+
+                                                   <a href="service-details.php?slug=<?= urlencode($slug) ?>">
+                                                      <?= htmlspecialchars($service['title']) ?>
+                                                   </a>
+
+                                             </h3>
+
+                                             <p>
+                                                   <?= htmlspecialchars($service['short_description']) ?>
+                                             </p>
+
+                                             <a href="service-details.php?slug=<?= urlencode($slug) ?>" class="link-btn style1">
+                                                   Read more
+                                                   <i class="fa-regular fa-chevrons-right"></i>
+                                             </a>
+
+                                          </div>
+
+                                       </div>
+
+                                 </div>
+
+                              <?php endforeach; ?>
+
+
                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">IT Network Services</a> </h3>
-                                 <p>Deliver robust enterprise networking solutions, ensuring maximum uptime, high-speed data transmission, and ironclad system security.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_3.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">Internet Content Provider</a> </h3>
-                                 <p>Seamlessly distribute engaging digital content across global networks, expanding audience reach and maximizing online visibility.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_4.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">Web Design</a> </h3>
-                                 <p>Craft stunning, responsive, and user-centric websites that captivate visitors and elevate your brand identity online.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_1.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">Electronic Chips Programming</a> </h3>
-                                 <p>Develop advanced firmware and microcode to optimize hardware functionality, precision control, and embedded device performance.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">Social Media Apps</a> </h3>
-                                 <p>Build dynamic social applications and manage digital platforms to foster active community engagement and brand growth.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_1.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">Database System Design</a> </h3>
-                                 <p>Architect secure, high-performance database systems to organize complex enterprise data, streamline queries, and ensure availability.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">Cloud & Datacenters</a> </h3>
-                                 <p>Provide reliable cloud environments and modern datacenter infrastructure to ensure scalable computing and resilient data storage.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="service-card style1">
-                              <div class="icon">
-                                 <img src="assets/img/icon/serviceIcon1_2.svg" alt="icon">
-                              </div>
-                              <div class="body">
-                                 <h3> <a href="service-details.html">Communication Software</a> </h3>
-                                 <p>Engineer specialized software for computer systems and communication hardware to enable seamless data exchange and device control.</p>
-                                 <a href="service-details.html" class="link-btn style1">Read more <i
-                                       class="fa-regular fa-chevrons-right"></i></a>
-                              </div>
-                           </div>
-                        </div>
 
                      </div>
 
                   </div>
 
                </div>
-            </div>
 
          </div>
+
       </div>
+
    </section>
+   <!-- Service Section    E N D -->
 
    <!-- About Section    S T A R T -->
    <section class="about-section space fix bg-theme-color">
@@ -643,199 +415,332 @@
    </section>
 
    <!-- Project Section   S T A R T -->
-   <section class="project-section space fix">
-      <div class="project-container-wrapper style1">
-         <div class="container">
-            <div class="section-title title-area  mx-auto mb-10">
-               <div class="subtitle d-flex justify-content-center"> <img src="assets/img/icon/arrowLeft.svg" alt="icon">
-                  <span>Examples of our work
-                  </span><img src="assets/img/icon/arrowRight.svg" alt="icon">
-               </div>
-               <h2 class="title text-center">Check Our Latest Portfolios</h2>
-            </div>
+      <section class="project-section space fix">
 
-            <!-- Navigation Cards -->
-            <div class="project-item-wrapper style1">
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".2s" data-category="web-dev">
-                  <div class="project-icon">
-                     <img src="assets/img/icon/projectItemIcon1_1.svg" alt="icon">
-                  </div>
-                  <h5>Web Development</h5>
-               </div>
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".4s" data-category="app-dev">
-                  <div class="project-icon">
-                     <img src="assets/img/icon/projectItemIcon1_2.svg" alt="icon">
-                  </div>
-                  <h5>App Development</h5>
-               </div>
-               <div class="project-item-card style1 active wow fadeInUp" data-wow-delay=".6s" data-category="ui-ux">
-                  <div class="project-icon">
-                     <img src="assets/img/icon/projectItemIcon1_3.svg" alt="icon">
-                  </div>
-                  <h5>UI/UX Designing</h5>
-               </div>
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay=".8s" data-category="cloud-db">
-                  <div class="project-icon">
-                     <img src="assets/img/icon/projectItemIcon1_4.svg" alt="icon">
-                  </div>
-                  <h5>Cloud & Database</h5>
-               </div>
-               <div class="project-item-card style1 wow fadeInUp" data-wow-delay="1s" data-category="it-infra">
-                  <div class="project-icon">
-                     <img src="assets/img/icon/projectItemIcon1_5.svg" alt="icon">
-                  </div>
-                  <h5>IT Infrastructure</h5>
-               </div>
-            </div>
+         <div class="project-container-wrapper style1">
 
-            <!-- Dynamic Content Area -->
-            <div class="project-wrapper style1">
-               <div class="row gy-5 gx-60">
-                  <div class="col-xl-5">
-                     <div class="project-thumb img-custom-anim-left wow fadeInUp" data-wow-delay=".5s">
-                        <img id="project-main-thumb" src="assets/img/project/projectThumb1_1.png" alt="thumb">
+            <div class="container">
+
+                  <!-- Section Title -->
+
+                  <div class="section-title title-area mx-auto mb-10">
+
+                     <div class="subtitle d-flex justify-content-center">
+
+                        <img
+                              src="assets/img/icon/arrowLeft.svg"
+                              alt="icon"
+                        >
+
+                        <span>
+                              Examples of our work
+                        </span>
+
+                        <img
+                              src="assets/img/icon/arrowRight.svg"
+                              alt="icon"
+                        >
+
                      </div>
+
+                     <h2 class="title text-center">
+                        Check Our Latest Portfolios
+                     </h2>
+
                   </div>
-                  <div class="col-xl-7">
-                     <div class="project-content-wrapper style1">
-                        <div class="project-content style1">
-                           <div class="row">
-                              <div class="col-xl-9">
-                                 <div class="project-content-left">
-                                    <h3 id="project-title">Detailing of our Project</h3>
-                                    <p id="project-desc" class="text">There are many variations passages of Lorem Ipsum available but the majority have suffered alteration in some form by injected humour,</p>
-                                    
-                                    <div class="fancy-box-wrapper style3">
-                                       <div class="fancy-box style3">
-                                          <div class="item">
-                                             <div class="icon">
-                                                <img src="assets/img/icon/projectIcon1_1.svg" alt="icon">
+
+                  <!-- =========================================
+                     Navigation Cards
+                  ========================================== -->
+                  <div class="project-item-wrapper style1">
+
+                     <?php
+
+                     $projectIndex = 0;
+
+                     foreach ($projects as $category => $project):
+
+                        $delays = ['.2s', '.4s', '.6s', '.8s', '1s'];
+
+                        $delay = $delays[$projectIndex % count($delays)];
+
+                        /*
+                           * Keep UI/UX active by default
+                           */
+                        $active = ($category === 'ui-ux') ? 'active' : '';
+
+                        $projectIndex++;
+
+                     ?>
+
+                        <div
+                              class="project-item-card style1 <?= $active ?> wow fadeInUp"
+                              data-wow-delay="<?= htmlspecialchars($delay) ?>"
+                              data-category="<?= htmlspecialchars($category) ?>"
+                        >
+
+                              <div class="project-icon">
+
+                                 <img
+                                    src="assets/img/icon/<?= htmlspecialchars($project['icon']) ?>"
+                                    alt="<?= htmlspecialchars($project['title']) ?>"
+                                 >
+
+                              </div>
+
+
+                              <h5>
+                                 <?= htmlspecialchars($project['title']) ?>
+                              </h5>
+
+                        </div>
+
+                     <?php endforeach; ?>
+
+                  </div>
+
+                  <!-- =========================================
+                     Dynamic Project Content
+                  ========================================== -->
+
+                  <div class="project-wrapper style1">
+
+                     <div class="row gy-5 gx-60">
+
+                        <!-- Main Image -->
+                        <div class="col-xl-5">
+
+                              <div class="project-thumb img-custom-anim-left wow fadeInUp" data-wow-delay=".5s">
+                                 <img id="project-main-thumb" src="assets/img/project/projectThumb1_1.png" alt="Project">
+                              </div>
+
+                        </div>
+
+                        <!-- Content -->
+                        <div class="col-xl-7">
+
+                              <div class="project-content-wrapper style1">
+
+                                 <div class="project-content style1">
+
+                                    <div class="row">
+
+                                          <!-- Left Content -->
+                                          <div class="col-xl-9">
+
+                                             <div class="project-content-left">
+
+                                                <h3 id="project-title">Detailing of our Project</h3>
+
+                                                <p id="project-desc" class="text">
+                                                      There are many variations passages of
+                                                      Lorem Ipsum available but the majority
+                                                      have suffered alteration in some form
+                                                      by injected humour.
+                                                </p>
+
+                                                <!-- Features -->
+                                                <div class="fancy-box-wrapper style3">
+
+                                                      <!-- Feature 1 -->
+                                                      <div class="fancy-box style3">
+
+                                                         <div class="item">
+
+                                                            <div class="icon">
+                                                                  <img src="assets/img/icon/projectIcon1_1.svg" alt="icon">
+                                                            </div>
+
+                                                         </div>
+
+
+                                                         <div class="item">
+                                                            <h6 id="feature-1">Responsive website</h6>
+                                                         </div>
+
+                                                      </div>
+
+
+                                                      <!-- Feature 2 -->
+                                                      <div class="fancy-box style3">
+
+                                                         <div class="item">
+
+                                                            <div class="icon">
+                                                                  <img src="assets/img/icon/projectIcon1_2.svg" alt="icon">
+                                                            </div>
+
+                                                         </div>
+
+                                                         <div class="item">
+
+                                                            <h6 id="feature-2">100% Customers Satisfaction</h6>
+
+                                                         </div>
+
+                                                      </div>
+
+                                                </div>
+
+                                                <!-- Feature 3 -->
+                                                <div class="fancy-box style3">
+
+                                                      <div class="item">
+                                                         <div class="icon">
+                                                            <img src="assets/img/icon/projectIcon1_3.svg" alt="icon">
+                                                         </div>
+                                                      </div>
+
+
+                                                      <div class="item">
+                                                         <h6 id="feature-3">Big Data & Analytics</h6>
+                                                      </div>
+
+                                                </div>
+
                                              </div>
+
                                           </div>
-                                          <div class="item">
-                                             <h6 id="feature-1">Responsive website</h6>
-                                          </div>
-                                       </div>
-                                       <div class="fancy-box style3">
-                                          <div class="item">
-                                             <div class="icon">
-                                                <img src="assets/img/icon/projectIcon1_2.svg" alt="icon">
+
+                                          <!-- Secondary Image -->
+                                          <div class="col-xl-3">
+
+                                             <div class="project-content-right">
+
+                                                <img id="project-sub-thumb" class="img-custom-anim-right wow fadeInUp" data-wow-delay=".6s" src="assets/img/project/projectThumb1_2.png" alt="Project">
+
                                              </div>
+
                                           </div>
-                                          <div class="item">
-                                             <h6 id="feature-2">100% Customers Satisfaction</h6>
-                                          </div>
-                                       </div>
+
                                     </div>
 
-                                    <div class="fancy-box style3">
-                                       <div class="item">
-                                          <div class="icon">
-                                             <img src="assets/img/icon/projectIcon1_3.svg" alt="icon">
-                                          </div>
-                                       </div>
-                                       <div class="item">
-                                          <h6 id="feature-3">Big Data & Analytics</h6>
-                                       </div>
-                                    </div>
                                  </div>
+
                               </div>
-                              <div class="col-xl-3">
-                                 <div class="project-content-right">
-                                    <img id="project-sub-thumb" class="img-custom-anim-right wow fadeInUp" data-wow-delay=".6s"
-                                       src="assets/img/project/projectThumb1_2.png" alt="thumb">
-                                 </div>
-                              </div>
-                           </div>
- 
+
+                        </div>
+
                      </div>
+
                   </div>
-               </div>
+
             </div>
-            
+
          </div>
-      </div>
-   </section>
+
+      </section>
+   <!-- Project Section   E N D -->
 
    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-    // Define content data for each service category
-    const projectData = {
-        "web-dev": {
-            title: "Custom Web Development Portfolio",
-            desc: "We build high-performance, fully responsive corporate websites and web applications tailored to optimize business operations and maximize user engagement.",
-            f1: "Responsive Design",
-            f2: "SEO Optimized",
-            f3: "Cross-Browser Compatibility",
-            thumb1: "assets/img/project/projectThumb1_1.png",
-            thumb2: "assets/img/project/projectThumb1_2.png"
-        },
-        "app-dev": {
-            title: "Mobile App Development Solutions",
-            desc: "Engineered robust, feature-rich iOS and Android mobile applications designed to offer seamless user experiences and scalable digital workflows.",
-            f1: "Cross-Platform Support",
-            f2: "High Security Standards",
-            f3: "Real-Time Sync",
-            thumb1: "assets/img/project/projectThumb1_1.png", // Change image paths if you have separate assets
-            thumb2: "assets/img/project/projectThumb1_2.png"
-        },
-        "ui-ux": {
-            title: "UI/UX Design & Prototyping",
-            desc: "Crafting intuitive, user-centric interfaces and interactive wireframes that captivate target audiences and elevate brand identity online.",
-            f1: "User Research & Wireframing",
-            f2: "Interactive Prototyping",
-            f3: "Modern Design Systems",
-            thumb1: "assets/img/project/projectThumb1_1.png",
-            thumb2: "assets/img/project/projectThumb1_2.png"
-        },
-        "cloud-db": {
-            title: "Cloud Architecture & Database Design",
-            desc: "Architect secure, high-performance cloud environments and structured database systems to ensure maximum availability and seamless data management.",
-            f1: "Secure Data Pipelines",
-            f2: "Cloud Scalability",
-            f3: "Automated Backups",
-            thumb1: "assets/img/project/projectThumb1_1.png",
-            thumb2: "assets/img/project/projectThumb1_2.png"
-        },
-        "it-infra": {
-            title: "Robust IT Infrastructure Services",
-            desc: "Building resilient enterprise IT networks and computing infrastructure designed to empower daily operations and guarantee uptime.",
-            f1: "Network Security",
-            f2: "24/7 Monitoring",
-            f3: "Enterprise Hardware Setup",
-            thumb1: "assets/img/project/projectThumb1_1.png",
-            thumb2: "assets/img/project/projectThumb1_2.png"
-        }
-    };
+      document.addEventListener('DOMContentLoaded', function () {
 
-    const cards = document.querySelectorAll(".project-item-card");
+         const projects = <?= json_encode($projects, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>;
 
-    cards.forEach(card => {
-        card.addEventListener("click", function () {
-            // Remove active class from all cards
-            cards.forEach(c => c.classList.remove("active"));
-            // Add active class to clicked card
-            this.classList.add("active");
+         const projectCards = document.querySelectorAll('.project-item-card');
 
-            // Get category key
-            const category = this.getAttribute("data-category");
-            const data = projectData[category];
+         const projectTitle = document.getElementById('project-title');
+         const projectDesc = document.getElementById('project-desc');
 
-            if (data) {
-                // Update text elements
-                document.getElementById("project-title").innerText = data.title;
-                document.getElementById("project-desc").innerText = data.desc;
-                document.getElementById("feature-1").innerText = data.f1;
-                document.getElementById("feature-2").innerText = data.f2;
-                document.getElementById("feature-3").innerText = data.f3;
+         const projectMainThumb = document.getElementById('project-main-thumb');
+         const projectSubThumb = document.getElementById('project-sub-thumb');
 
-                // Update images
-                document.getElementById("project-main-thumb").setAttribute("src", data.thumb1);
-                document.getElementById("project-sub-thumb").setAttribute("src", data.thumb2);
+         const feature1 = document.getElementById('feature-1');
+         const feature2 = document.getElementById('feature-2');
+         const feature3 = document.getElementById('feature-3');
+
+
+         function loadProject(category) {
+
+            if (!projects[category]) {
+                  return;
             }
-        });
-    });
-});
+
+            const project = projects[category];
+
+
+            // -----------------------------
+            // Active Category
+            // -----------------------------
+
+            projectCards.forEach(card => {
+
+                  card.classList.remove('active');
+
+                  if (card.dataset.category === category) {
+                     card.classList.add('active');
+                  }
+
+            });
+
+
+            // -----------------------------
+            // Title
+            // -----------------------------
+
+            projectTitle.textContent = project.title;
+
+            // -----------------------------
+            // Description
+            // -----------------------------
+
+            projectDesc.textContent = project.description;
+
+
+            // -----------------------------
+            // Main Image
+            // -----------------------------
+
+            projectMainThumb.src = project.main_image;
+            projectMainThumb.alt = project.title;
+            // -----------------------------
+            // Secondary Image
+            // -----------------------------
+
+            projectSubThumb.src =  project.sub_image;
+            projectSubThumb.alt = project.title;
+
+
+            // -----------------------------
+            // Features
+            // -----------------------------
+
+            feature1.textContent =
+                  project.features[0] ?? '';
+
+            feature2.textContent =
+                  project.features[1] ?? '';
+
+            feature3.textContent =
+                  project.features[2] ?? '';
+
+         }
+
+
+         // -----------------------------
+         // Category Click
+         // -----------------------------
+
+         projectCards.forEach(card => {
+
+            card.addEventListener('click', function () {
+
+                  const category = this.dataset.category;
+
+                  loadProject(category);
+
+            });
+
+         });
+
+
+         // -----------------------------
+         // Default Project
+         // -----------------------------
+
+         loadProject('ui-ux');
+
+      });
    </script>
 
    <!-- Video Section    S T A R T -->
@@ -889,7 +794,7 @@
    </section>
 
    <!-- Team Section   S T A R T -->
-   <section class="team-section  fix">
+   <section class="team-section  fix d-none">
       <div class="team-wrapper space style1" data-bg-src="assets/img/bg/teamBg1_1.png">
          <div class="container">
             <div class="row">
@@ -1466,201 +1371,227 @@
    <section class="blog-section space fix">
       <div class="blog-wrapper style1 space pt-0">
          <div class="container">
+
             <div class="title-wrap mb-45">
                <div class="section-title">
-                  <div class="subtitle"> <img src="assets/img/icon/arrowLeft.svg" alt="icon"> <span> Blog & News
-                     </span><img src="assets/img/icon/arrowRight.svg" alt="icon"></div>
-                  <h2 class="title">Featured News And Insights</h2>
-               </div>
-               <div class="arrow-btn text-end wow fadeInUp" data-wow-delay=".9s">
-                  <button data-slider-prev="#blogSliderOne" class="slider-arrow style1"><i
-                        class="fa-sharp fa-regular fa-arrow-left-long"></i></button>
-                  <button data-slider-next="#blogSliderOne" class="slider-arrow style1 slider-next"><i
-                        class="fa-regular fa-arrow-right-long"></i> </button>
-               </div>
-            </div>
-            <div class="row">
-               <div class="slider-area blogSliderOne">
-                  <div class="swiper gt-slider" id="blogSliderOne"
-                     data-slider-options='{"loop": true, "breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":1,"centeredSlides":true},"768":{"slidesPerView":2},"992":{"slidesPerView":2},"1200":{"slidesPerView":3}}}'>
-                     <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide">
-                           <div class="blog-card style1 img-custom-anim-left wow fadeInUp" data-wow-delay=".4s">
-                              <div class="blog-card-thumb">
-                                 <img src="assets/img/blog/blogThumb1_1.jpg" alt="thumb">
-                              </div>
-                              <div class="blog-card-body">
-                                 <div class="blog-meta">
-                                    <div class="tag">Web Development</div>
-                                    <div class="date">August 18, 2026</div>
-                                 </div>
-                                 <h3><a href="news-details.html">Building High-Performance Web Applications with Modern Frameworks</a></h3>
-                                 <div class="author-meta">
-                                    <div class="fancy-box style1">
-                                       <div class="item"><img src="assets/img/blog/blogProfile1_1.png" alt="thumb">
-                                       </div>
-                                       <div class="item">
-                                          <h6>Admin</h6>
-                                          <p>Co, Founder</p>
-                                       </div>
-                                    </div>
 
-                                    <a class="link-btn style1" href="news-details.html"><i
-                                          class="fa-solid fa-arrow-right"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                  <div class="subtitle">
+                     <img src="assets/img/icon/arrowLeft.svg" alt="icon">
 
-                        <div class="swiper-slide">
-                           <div class="blog-card style1 img-custom-anim-top wow fadeInUp" data-wow-delay=".6s">
-                              <div class="blog-card-thumb">
-                                 <img src="assets/img/blog/blogThumb1_2.jpg" alt="thumb">
-                              </div>
-                              <div class="blog-card-body">
-                                 <div class="blog-meta">
-                                    <div class="tag"> Cybersecurity</div>
-                                    <div class="date">August 10, 2026</div>
-                                 </div>
-                                 <h3><a href="news-details.html">Best Practices for Securing Enterprise Databases and APIs</a></h3>
-                                 <div class="author-meta">
-                                    <div class="fancy-box style1">
-                                       <div class="item"><img src="assets/img/blog/blogProfile1_2.png" alt="thumb">
-                                       </div>
-                                       <div class="item">
-                                          <h6>Admin</h6>
-                                          <p>Co, Founder</p>
-                                       </div>
-                                    </div>
+                     <span>Blog & News</span>
 
-                                    <a class="link-btn style1" href="news-details.html"><i
-                                          class="fa-solid fa-arrow-right"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="blog-card style1 img-custom-anim-left wow fadeInUp" data-wow-delay=".8s">
-                              <div class="blog-card-thumb">
-                                 <img src="assets/img/blog/blogThumb1_3.jpg" alt="thumb">
-                              </div>
-                              <div class="blog-card-body">
-                                 <div class="blog-meta">
-                                    <div class="tag">UI/UX Design</div>
-                                    <div class="date">August 5, 2026</div>
-                                 </div>
-                                 <h3><a href="news-details.html">The Role of User-Centric Design in Boosting Digital Conversion Rates</a></h3>
-                                 <div class="author-meta">
-                                    <div class="fancy-box style1">
-                                       <div class="item"><img src="assets/img/blog/blogProfile1_3.png" alt="thumb">
-                                       </div>
-                                       <div class="item">
-                                          <h6>Admin</h6>
-                                          <p>Co, Founder</p>
-                                       </div>
-                                    </div>
-
-                                    <a class="link-btn style1" href="news-details.html"><i
-                                          class="fa-solid fa-arrow-right"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="blog-card style1 img-custom-anim-left wow fadeInUp" data-wow-delay="1s">
-                              <div class="blog-card-thumb">
-                                 <img src="assets/img/blog/blogThumb1_1.jpg" alt="thumb">
-                              </div>
-                              <div class="blog-card-body">
-                                 <div class="blog-meta">
-                                    <div class="tag">Database Systems</div>
-                                    <div class="date">July 28, 2026</div>
-                                 </div>
-                                 <h3><a href="news-details.html">Optimizing Query Performance in Complex Enterprise Databases</a></h3>
-                                 <div class="author-meta">
-                                    <div class="fancy-box style1">
-                                       <div class="item"><img src="assets/img/blog/blogProfile1_1.png" alt="thumb">
-                                       </div>
-                                       <div class="item">
-                                          <h6>Admin</h6>
-                                          <p>Co, Founder</p>
-                                       </div>
-                                    </div>
-
-                                    <a class="link-btn style1" href="news-details.html"><i
-                                          class="fa-sharp fa-regular fa-arrow-right-long"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="blog-card style1 img-custom-anim-left wow fadeInUp" data-wow-delay=".4s">
-                              <div class="blog-card-thumb">
-                                 <img src="assets/img/blog/blogThumb1_2.jpg" alt="thumb">
-                              </div>
-                              <div class="blog-card-body">
-                                 <div class="blog-meta">
-                                    <div class="tag"> Mobile Apps</div>
-                                    <div class="date">July 20, 2026</div>
-                                 </div>
-                                 <h3><a href="news-details.html">Cross-Platform Mobile Development: Trends and Best Practices for 2026</a></h3>
-                                 <div class="author-meta">
-                                    <div class="fancy-box style1">
-                                       <div class="item"><img src="assets/img/blog/blogProfile1_2.png" alt="thumb">
-                                       </div>
-                                       <div class="item">
-                                          <h6>Admin</h6>
-                                          <p>Co, Founder</p>
-                                       </div>
-                                    </div>
-
-                                    <a class="link-btn style1" href="news-details.html"><i
-                                          class="fa-sharp fa-regular fa-arrow-right-long"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="blog-card style1 img-custom-anim-left wow fadeInUp" data-wow-delay=".8s">
-                              <div class="blog-card-thumb">
-                                 <img src="assets/img/blog/blogThumb1_3.jpg" alt="thumb">
-                              </div>
-                              <div class="blog-card-body">
-                                 <div class="blog-meta">
-                                    <div class="tag">IT Infrastructure</div>
-                                    <div class="date">July 15, 2026</div>
-                                 </div>
-                                 <h3><a href="news-details.html">Ensuring Maximum Uptime and Reliability in Modern Datacenters</a></h3>
-                                 <div class="author-meta">
-                                    <div class="fancy-box style1">
-                                       <div class="item"><img src="assets/img/blog/blogProfile1_3.png" alt="thumb">
-                                       </div>
-                                       <div class="item">
-                                          <h6>Admin</h6>
-                                          <p>Co, Founder</p>
-                                       </div>
-                                    </div>
-
-                                    <a class="link-btn style1" href="news-details.html"><i
-                                          class="fa-sharp fa-regular fa-arrow-right-long"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        
-                     </div>
+                     <img src="assets/img/icon/arrowRight.svg" alt="icon">
                   </div>
+
+                  <h2 class="title">
+                     Featured News And Insights
+                  </h2>
+
+               </div>
+
+               <div class="arrow-btn text-end wow fadeInUp" data-wow-delay=".9s">
+
+                  <button
+                     data-slider-prev="#blogSliderOne"
+                     class="slider-arrow style1"
+                     type="button"
+                  >
+                     <i class="fa-sharp fa-regular fa-arrow-left-long"></i>
+                  </button>
+
+                  <button
+                     data-slider-next="#blogSliderOne"
+                     class="slider-arrow style1 slider-next"
+                     type="button"
+                  >
+                     <i class="fa-regular fa-arrow-right-long"></i>
+                  </button>
+
                </div>
             </div>
+
+
+            <div class="row">
+
+               <div class="slider-area blogSliderOne">
+
+                  <div
+                     class="swiper gt-slider"
+                     id="blogSliderOne"
+                     data-slider-options='{
+                        "loop": true,
+                        "breakpoints": {
+                           "0": {
+                              "slidesPerView": 1
+                           },
+                           "576": {
+                              "slidesPerView": 1,
+                              "centeredSlides": true
+                           },
+                           "768": {
+                              "slidesPerView": 2
+                           },
+                           "992": {
+                              "slidesPerView": 2
+                           },
+                           "1200": {
+                              "slidesPerView": 3
+                           }
+                        }
+                     }'
+                  >
+
+                     <div class="swiper-wrapper">
+
+                        <?php
+                        $blogIndex = 0;
+
+                        foreach ($blogs as $slug => $blog):
+
+                           $delays = ['.4s', '.6s', '.8s', '1s'];
+                           $delay = $delays[$blogIndex % count($delays)];
+
+                           $blogIndex++;
+
+                           /*
+                           * Date formatting
+                           */
+                           $formattedDate = '';
+
+                           if (!empty($blog['date'])) {
+
+                              $date = DateTime::createFromFormat(
+                                 'Y-m-d',
+                                 $blog['date']
+                              );
+
+                              if ($date) {
+                                 $formattedDate = $date->format('F d, Y');
+                              }
+                           }
+
+                           /*
+                           * Safe values
+                           */
+                           $title = $blog['title'] ?? '';
+                           $category = $blog['category'] ?? '';
+                           $image = $blog['image'] ?? '';
+                           $author = $blog['author'] ?? 'Admin';
+                           $profile = $blog['profile'] ?? 'assets/img/blog/blogProfile1_1.png';
+
+                        ?>
+
+                        <div class="swiper-slide">
+
+                           <div
+                              class="blog-card style1 img-custom-anim-left wow fadeInUp"
+                              data-wow-delay="<?= htmlspecialchars($delay) ?>"
+                           >
+
+                              <!-- Blog Image -->
+                              <div class="blog-card-thumb">
+
+                                 <a href="news-details.php?slug=<?= urlencode($slug) ?>">
+
+                                    <img
+                                       src="<?= htmlspecialchars($image) ?>"
+                                       alt="<?= htmlspecialchars($title) ?>"
+                                       loading="lazy"
+                                    >
+
+                                 </a>
+
+                              </div>
+
+
+                              <!-- Blog Body -->
+                              <div class="blog-card-body">
+
+                                 <div class="blog-meta">
+
+                                    <div class="tag">
+                                       <?= htmlspecialchars($category) ?>
+                                    </div>
+
+                                    <div class="date">
+                                       <?= htmlspecialchars($formattedDate) ?>
+                                    </div>
+
+                                 </div>
+
+
+                                 <h3>
+
+                                    <a
+                                       href="news-details.php?slug=<?= urlencode($slug) ?>"
+                                    >
+                                       <?= htmlspecialchars($title) ?>
+                                    </a>
+
+                                 </h3>
+
+
+                                 <!-- Author -->
+                                 <div class="author-meta">
+
+                                    <div class="fancy-box style1">
+
+                                       <div class="item">
+
+                                          <img
+                                             src="<?= htmlspecialchars($profile) ?>"
+                                             alt="<?= htmlspecialchars($author) ?>"
+                                             loading="lazy"
+                                          >
+
+                                       </div>
+
+                                       <div class="item">
+
+                                          <h6>
+                                             <?= htmlspecialchars($author) ?>
+                                          </h6>
+
+                                          <p>
+                                             Co, Founder
+                                          </p>
+
+                                       </div>
+
+                                    </div>
+
+
+                                    <!-- Read More -->
+                                    <a
+                                       class="link-btn style1"
+                                       href="news-details.php?slug=<?= urlencode($slug) ?>"
+                                       aria-label="Read <?= htmlspecialchars($title) ?>"
+                                    >
+                                       <i class="fa-solid fa-arrow-right"></i>
+                                    </a>
+
+                                 </div>
+
+                              </div>
+
+                           </div>
+
+                        </div>
+
+                        <?php endforeach; ?>
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+            </div>
+
          </div>
       </div>
    </section>
-
+   
    <!-- Cta Section   S T A R T -->
    <section class="cta-section space pb-0 mt-n150 mb-n116 z-5">
       <div class="container">
@@ -1683,161 +1614,6 @@
       </div>
    </section>
 
-   <!-- Footer Area   S T A R T -->
-   <footer class="footer-area">
-      <div class="widget-area style1  pt-100 pb-80">
-         <div class="container">
-            <div class="footer-layout style1">
-               <div class="row">
-                  <div class="col-xl-3 col-md-6 col-12">
-                     <div class="widget footer-widget wow fadeInUp" data-wow-delay=".6s">
-                        <div class="gt-widget-about">
-                           <div class="about-logo">
-                              <a href="index.html">
-                                 <img src="assets/img/logo-footer-white.png" alt="JJR Tech" width="200px;" height="auto">
-                              </a>
-                           </div>
-                           <p class="about-text">Empowering businesses worldwide with next-generation IT solutions, advanced web engineering, secure cloud architecture, and expert technical support.
-                           </p>
-                           <div class="gt-social style2">
-                              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                              <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                              <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-2 col-md-6 col-12">
-                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1s">
-                        <h3 class="widget_title">Quick Links</h3>
-                        <div class="menu-all-pages-container">
-                           <ul class="menu">
-                              <li><a href="about.html"><i class="fa-solid fa-chevrons-right"></i> About</a>
-                              </li>
-                              <li><a href="service.html"><i class="fa-solid fa-chevrons-right"></i>Our Services</a>
-                              </li>
-                              <li><a href="news.html"><i class="fa-solid fa-chevrons-right"></i>Our
-                                    Blogs</a>
-                              </li>
-                              <li><a href="faq.html"><i class="fa-solid fa-chevrons-right"></i>FAQ’S</a></li>
-                              <li><a href="contact.html"><i class="fa-solid fa-chevrons-right"></i>Contact Us</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-md-6 col-12">
-                     <div class="widget footer-widget wow fadeInUp" data-wow-delay="1.3s">
-                        <h3 class="widget_title">Recent Posts</h3>
-                        <div class="recent-post-wrap">
-                           <div class="recent-post">
-                              <div class="media-img">
-                                 <a href="news-details.html"><img src="assets/img/footer/footerThumb1_1.png"
-                                       alt="thumb"></a>
-                              </div>
-                              <div class="media-body">
-                                 <div class="recent-post-meta">
-                                    <a href="news-details.html"><img src="assets/img/icon/calendarIcon.svg"
-                                          alt="icon">15th April, 2024</a>
-                                 </div>
-                                 <h4 class="post-title"><a class="text-inherit" href="news-details.html">Top 5 Most
-                                       Famous Technology Trend In 2024</a>
-                                 </h4>
-                              </div>
-                           </div>
-                           <div class="recent-post">
-                              <div class="media-img">
-                                 <a href="news-details.html"><img src="assets/img/footer/footerThumb1_2.png"
-                                       alt="thumb"></a>
-                              </div>
-                              <div class="media-body">
-                                 <div class="recent-post-meta">
-                                    <a href="news-details.html"><img src="assets/img/icon/calendarIcon.svg"
-                                          alt="icon">20th June, 2024</a>
-                                 </div>
-                                 <h4 class="post-title"><a class="text-inherit" href="news-details.html">The Surfing
-                                       Man Will Blow Your Mind</a>
-                                 </h4>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-3 col-md-6 col-12">
-                     <div class="widget widget_nav_menu footer-widget wow fadeInUp" data-wow-delay="1.6s">
-                        <h3 class="widget_title">Contact Us</h3>
-                        <div class="checklist style2">
-                           <ul class="ps-0">
-                              <li class="text-white"><i class="fa-solid fa-envelope"></i></li>
-                              <li class="text-white">info@example.com</li>
-                           </ul>
-                           <ul class="ps-0">
-                              <li class="text-white"><i class="fa-solid fa-phone"></i></li>
-                              <li class="text-white">+208-6666-0112</li>
-                           </ul>
-                           <div class="email-input-container">
-                              <input type="email" id="email" placeholder="Your email address" required="">
-                              <button type="submit" id="submitButton" disabled=""><i
-                                    class="fa-regular fa-arrow-right-long"></i></button>
-                           </div>
-                           <form id="termsForm">
-                              <label class="custom-checkbox">
-                                 <input type="checkbox" name="agree" id="agreeCheckbox">
-                                 <span class="checkmark"></span>
-                                 I agree to the <a class="text-underline" href="contact.html" target="_blank">Privacy
-                                    Policy.</a>
-                              </label>
-                              <br>
-                           </form>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="copyright-wrap bg-theme">
-         <div class="container">
-            <div class="copyright-layout">
-               <div class="layout-text wow fadeInUp" data-wow-delay=".3s">
-                  <p class="copyright">
-                     <i class="fal fa-copyright"></i> All Copyright 2024 by <a href="index.html">JJR Tech</a>
-                  </p>
-               </div>
-               <div class="layout-link wow fadeInUp" data-wow-delay=".6s">
-                  <div class="link-wrapper">
-                     <a href="contact.html">Terms &amp; Condition </a>
-                     <a href="contact.html">Privacy Policy</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </footer>
-
-   <!--<< All JS Plugins >>-->
-   <script src="assets/js/jquery-3.7.1.min.js"></script>
-   <!--<< Viewport Js >>-->
-   <script src="assets/js/viewport.jquery.js"></script>
-   <!--<< Bootstrap Js >>-->
-   <script src="assets/js/bootstrap.bundle.min.js"></script>
-   <!--<< Nice Select Js >>-->
-   <script src="assets/js/jquery.nice-select.min.js"></script>
-   <!--<< Waypoints Js >>-->
-   <script src="assets/js/jquery.waypoints.js"></script>
-   <!--<< Counterup Js >>-->
-   <script src="assets/js/jquery.counterup.min.js"></script>
-   <!--<< Swiper Slider Js >>-->
-   <script src="assets/js/swiper-bundle.min.js"></script>
-   <!--<< MeanMenu Js >>-->
-   <script src="assets/js/jquery.meanmenu.min.js"></script>
-   <!--<< Magnific Popup Js >>-->
-   <script src="assets/js/jquery.magnific-popup.min.js"></script>
-   <!--<< Wow Animation Js >>-->
-   <script src="assets/js/wow.min.js"></script>
-   <!--<< Main.js >>-->
-   <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+<?php
+include_once ('elements/footer.php')
+?>

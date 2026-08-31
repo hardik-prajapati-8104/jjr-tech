@@ -6089,11 +6089,11 @@ h6 {
   -o-transition: 0.4s ease-in-out;
 }
 .widget.widget_nav_menu.footer-widget .menu-all-pages-container .menu li a:hover {
-  color: var(--theme);
+  color: #fff;
 }
-.widget.widget_nav_menu.footer-widget .menu-all-pages-container .menu li a:hover i {
+/* .widget.widget_nav_menu.footer-widget .menu-all-pages-container .menu li a:hover i {
   color: var(--theme);
-}
+} */
 .widget.widget_nav_menu.footer-widget .checklist {
   margin-top: 25px;
   margin-bottom: 0px;
@@ -6173,7 +6173,7 @@ h6 {
   line-height: 24px;
 }
 .recent-post-wrap .recent-post .media-body .post-title a:hover {
-  color: var(--theme);
+  color: #fff;
 }
 
 .copyright-wrap .copyright-layout {
